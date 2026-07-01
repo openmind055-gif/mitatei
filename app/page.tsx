@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 w-full max-w-[1200px] mx-auto px-5 md:px-[120px]">
           <div className="max-w-xl mb-20">
-            <h1 className="text-3xl md:text-[52px] font-bold text-[#F9F8F6] mb-8 leading-tight">
+            <h1 className="text-3xl md:text-[48px] font-bold text-[#F9F8F6] mb-8 leading-tight">
               石垣島の恵みを味わう、<br />至福のしゃぶしゃぶ体験。
             </h1>
             <p className="text-lg text-[#d1c5b4] mb-12 max-w-lg leading-relaxed">
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="mt-16">
             <div className="w-full h-[450px] bg-[#201f1f] rounded-lg overflow-hidden border border-[#4e4639]/30">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.123456789!2d124.156789!3d24.345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345fd123456789%3A0x123456789abcdef!2sIshigaki%2C%20Okinawa!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp"
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3635.1287341467437!2d124.15257447535427!3d24.34200792827138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5LiJ55Sw5LiB!5e0!3m2!1sja!2sjp!4v1782864130432!5m2!1sja!2sjp"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: "grayscale(1) invert(0.9) contrast(1.2)" }}
