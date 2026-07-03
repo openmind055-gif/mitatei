@@ -26,12 +26,12 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-[#131313]/80 backdrop-blur-md border-b border-[#4e4639]/30">
         <div className="flex justify-between items-center px-5 md:px-[120px] py-4 w-full max-w-[1200px] mx-auto">
           <Image
-  src="/images/logo.png"
-  alt="三田丁"
-  width={140}
-  height={50}
-  priority
-/>
+           src="/images/logo.png"
+           alt="三田丁"
+           width={140}
+           height={50}
+           priority
+           />
           <div className="hidden md:flex items-center gap-8">
             <a href="#experience" className="text-sm text-[#d1c5b4] hover:text-[#e9c176] transition-colors">体験</a>
             <a href="#ingredients" className="text-sm text-[#d1c5b4] hover:text-[#e9c176] transition-colors">メニュー</a>
@@ -132,17 +132,24 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
               <div className="absolute bottom-0 p-6">
                 <h3 className="text-xl font-bold text-[#e9c176] mb-2">海ぶどう</h3>
-                <p className="text-[#d1c5b4] text-sm">プチプチとした磯の宝石。</p>
+                <p className="text-[#d1c5b4] text-sm">プチプチとした磯の宝石。海ブドウの塩味とアグー豚の旨みのマリアージュ</p>
               </div>
             </div>
-            <div className="md:col-span-4 bg-[#2a2a2a] p-8 flex flex-col justify-center">
-              <div className="relative w-full h-32 overflow-hidden rounded-lg mb-6">
-                <Image src="/images/shime.jpg" alt="〆の雑炊" fill className="object-cover" />
-              </div>
-              <h3 className="text-xl font-bold text-[#F9F8F6] mb-4">〆の逸品</h3>
-              <p className="text-[#d1c5b4] text-sm mb-4">肉の旨みが溶け出した出汁で愉しむ、究極のアーサー雑炊。</p>
-              <a href="#reservation" className="text-[#e9c176] border-b border-[#e9c176]/30 pb-1 text-sm font-bold hover:text-[#B38B4D] transition-colors inline-block w-fit">予約する →</a>
-            </div>
+            <div className="md:col-span-4 relative overflow-hidden group min-h-[250px]">
+  <Image
+    src="/images/shime.jpg"
+    alt="〆の雑炊"
+    fill
+    className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+  <div className="absolute bottom-0 p-6">
+    <h3 className="text-xl font-bold text-[#e9c176] mb-2">〆の逸品</h3>
+    <p className="text-[#d1c5b4] text-sm">
+      肉の旨みが溶け出した出汁で愉しむ、究極のアーサー雑炊。
+    </p>
+  </div>
+</div>
           </div>
         </div>
       </section>
