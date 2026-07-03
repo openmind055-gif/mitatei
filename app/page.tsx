@@ -226,25 +226,48 @@ export default function Home() {
       </section>
 
       {/* 予約セクション */}
-      <section className="py-20 md:py-[120px] bg-[#c5a059] text-[#4e3700]" id="reservation">
-        <div className="max-w-[1200px] mx-auto px-5 text-center">
-          <h2 className="text-4xl md:text-[64px] font-bold mb-8">至福のひとときを予約する</h2>
-          <p className="text-lg mb-12 max-w-2xl mx-auto opacity-90 leading-relaxed">
-            お電話またはウェブ予約にて承っております。<br className="hidden md:block" />皆様のご来店を、心よりお待ち申し上げております。
-          </p>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-            <a href="#" className="flex items-center justify-center gap-3 w-full md:w-auto bg-[#4e3700] text-[#c5a059] font-bold py-5 px-10 text-xl hover:brightness-110 transition-all">
-              今すぐウェブで予約する
-            </a>
-            <a href="tel:0980-82-6351" className="flex items-center justify-center gap-3 w-full md:w-auto border-2 border-[#4e3700] text-[#4e3700] font-bold py-5 px-10 text-xl hover:bg-[#4e3700] hover:text-[#c5a059] transition-all">
-              お電話で予約・相談する
-            </a>
-          </div>
-          <div className="mt-8 text-2xl font-bold tracking-widest">
-            TEL: 0980-82-6351
-          </div>
-        </div>
-      </section>
+<section className="py-20 md:py-[120px] bg-[#c5a059] text-[#2a1d00]" id="reservation">
+  <div className="max-w-[1200px] mx-auto px-5 text-center">
+    <span className="text-xs tracking-[0.25em] uppercase mb-6 block opacity-70">
+      Reservation
+    </span>
+
+    <h2 className="text-4xl md:text-[64px] font-bold mb-8 leading-tight">
+      石垣島で過ごす夜を、<br className="hidden md:block" />
+      特別なひとときへ。
+    </h2>
+
+    <p className="text-lg mb-6 max-w-2xl mx-auto opacity-90 leading-relaxed">
+      石垣牛とアグー豚、島の恵みを味わうしゃぶしゃぶ体験を。
+    </p>
+
+    <p className="text-sm md:text-base mb-12 max-w-2xl mx-auto opacity-80 leading-relaxed">
+      席数に限りがございます。ご来店予定がお決まりの際は、事前のご予約をおすすめしております。
+    </p>
+
+    <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+      <a
+  href="https://www.tablecheck.com/ja/mitatei-ishigaki/reserve/message?utm_source=google&rwg_token=AE37R_jSEzNenTBqTJ-MR5OQ6sdwE--4i9JpOev87X4rmYa6aylqZ9Z4Pw84Kif8AYZkpCxiz41euycLdjnSKHArxrOE1VNu3MGhJIW9girNeMBqNFL9oiM%3D"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center justify-center gap-3 w-full md:w-auto bg-[#2a1d00] text-[#e9c176] font-bold py-5 px-10 text-lg md:text-xl rounded-full hover:brightness-110 hover:scale-105 transition-all duration-500"
+>
+  ご予約はこちら →
+</a>
+
+      <a
+        href="tel:0980826351"
+        className="flex items-center justify-center gap-3 w-full md:w-auto border-2 border-[#2a1d00] text-[#2a1d00] font-bold py-5 px-10 text-lg md:text-xl rounded-full hover:bg-[#2a1d00] hover:text-[#e9c176] hover:scale-105 transition-all duration-500"
+      >
+        電話で相談する
+      </a>
+    </div>
+
+    <div className="mt-8 text-xl md:text-2xl font-bold tracking-widest">
+      TEL: 0980-82-6351
+    </div>
+  </div>
+</section>
 
       {/* フッター */}
       <footer className="bg-[#121212] border-t border-[#4e4639]/20 py-20">
