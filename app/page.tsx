@@ -25,7 +25,13 @@ export default function Home() {
       {/* ナビゲーション */}
       <nav className="sticky top-0 z-50 bg-[#131313]/80 backdrop-blur-md border-b border-[#4e4639]/30">
         <div className="flex justify-between items-center px-5 md:px-[120px] py-4 w-full max-w-[1200px] mx-auto">
-          <div className="text-[#e9c176] font-bold text-2xl">三田丁</div>
+          <Image
+  src="/images/logo.png"
+  alt="三田丁"
+  width={140}
+  height={50}
+  priority
+/>
           <div className="hidden md:flex items-center gap-8">
             <a href="#experience" className="text-sm text-[#d1c5b4] hover:text-[#e9c176] transition-colors">体験</a>
             <a href="#ingredients" className="text-sm text-[#d1c5b4] hover:text-[#e9c176] transition-colors">メニュー</a>
@@ -51,11 +57,11 @@ export default function Home() {
               石垣島の恵みを味わう、<br />至福のしゃぶしゃぶ体験。
             </h1>
             <p className="text-lg text-[#d1c5b4] mb-12 max-w-lg leading-relaxed">
-              厳選された石垣牛と、島特有の食材が織りなす極上の和食。プライベートな空間で、心ゆくまで贅沢なひとときを。
+              厳選された石垣牛とアグー豚、島特有の食材が織りなす極上の和食。プライベートな空間で、心ゆくまで贅沢なひとときを。
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#reservation" className="bg-[#e9c176] py-4 px-12 text-[#412d00] font-bold text-lg text-center hover:bg-[#B38B4D] transition-colors">今すぐ予約する</a>
-              <a href="#ingredients" className="border border-[#4e4639] py-4 px-12 text-[#F9F8F6] font-bold text-lg text-center hover:bg-white/5 transition-colors">お品書きを見る</a>
+              <a href="#ingredients" className="border border-[#4e4639] py-4 px-12 text-[#F9F8F6] font-bold text-lg text-center hover:bg-white/5 transition-colors">厳選された食材</a>
             </div>
           </div>
         </div>
@@ -72,7 +78,7 @@ export default function Home() {
                 石垣島の自然が育んだ、力強くも繊細な味わい。私たちは、単なる食事を超えた「記憶に残る体験」を提供することを使命としています。
               </p>
               <p className="text-base text-[#d1c5b4] mb-12 leading-relaxed">
-                洗練された和の空間で、職人が選び抜いた最高級の石垣牛とアグー豚をご用意。海ぶどうのプチプチとした食感と肉の旨みが溶け合う、当店ならではのシグネチャーメニューをお楽しみください。
+                洗練された和の空間で、職人が選び抜いた最高級の石垣牛とアグー豚をご用意。海ぶどうのプチプチとした食感と肉の旨みが溶け合う、当店ならではの味わいをお楽しみください。
               </p>
               <div className="border-l-2 border-[#e9c176] pl-6 py-2 italic text-[#B38B4D] text-lg">
                 「島と人が繋がる、最も贅沢な時間」
@@ -117,7 +123,7 @@ export default function Home() {
               <Image src="/images/agu.jpg" alt="アグー豚" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 p-10">
-                <h3 className="text-2xl font-bold text-[#e9c176] mb-3">純血アグー豚</h3>
+                <h3 className="text-2xl font-bold text-[#e9c176] mb-3">アグー豚</h3>
                 <p className="text-[#d1c5b4] text-sm">希少な沖縄の在来種。通常の豚よりも融点が低く、コクがありながらもさっぱりとした脂の甘みが特徴です。</p>
               </div>
             </div>
@@ -150,7 +156,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-[#F9F8F6]">五感で愉しむ空間</h2>
             </div>
             <p className="max-w-md text-[#d1c5b4] mt-6 md:mt-0">
-              都会の喧騒を離れ、洗練されたモダンな和の空間へ。カウンター席では職人の技を間近に、個室では大切な方とのプライベートな時間を。
+              都会の喧騒を離れ、洗練されたモダンな和の空間へ。カウンター席ではカジュアルな空間を、個室では大切な方とのプライベートな時間を。
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
