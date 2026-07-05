@@ -350,7 +350,7 @@ export default function Home() {
       {/* ヒーロー */}
       <section className="relative h-[921px] w-full flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/hero.jpg" alt={t.hero.imageAlt} fill className="object-cover opacity-60" priority />
+          <Image src="/images/hero.jpg" alt={t.hero.imageAlt} fill className="object-cover object-[75%_center] md:object-center opacity-60" priority />
           <div className="absolute inset-0 bg-gradient-to-tr from-[#131313] via-[#131313]/60 to-transparent"></div>
         </div>
         <div className="relative z-10 w-full max-w-[1200px] mx-auto px-5 md:px-[120px]">
