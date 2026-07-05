@@ -26,11 +26,11 @@ const languages = {
         reservation: "予約する",
       },
       hero: {
-        titleFirst: "石垣島旅行、最後の夜に。",
-        titleSecond: "記憶に残る、島のごちそうを。",
+        titleFirst: "石垣島の旅に、",
+        titleSecond: "記憶に残る一席を。",
         description:
-          "石垣牛、純血アグー豚、名物の海ぶどう巻き。石垣島ならではの美味しさと心地よい時間で、旅の最後の夜を締めくくるしゃぶしゃぶ体験を。",
-        reservation: "最後の夜の席を予約する",
+          "石垣牛とアグー豚、海ぶどうを巻いて味わうひと口。丁寧なおもてなしと落ち着いた空間で、石垣島ならではのディナーをお楽しみください。",
+        reservation: "席を予約する",
         ingredients: "島のごちそうを見る",
         imageAlt: "石垣牛しゃぶしゃぶ",
       },
@@ -40,7 +40,7 @@ const languages = {
         first:
           "石垣島の自然が育んだ、力強くも繊細な味わい。私たちは、単なる食事を超えた「記憶に残る体験」を提供することを使命としています。",
         second:
-          "洗練された和の空間で味わう、石垣牛と希少な純血アグー豚。名物の海ぶどう巻きまで、島のごちそうを一度に楽しむ時間が、旅の最後の夜を鮮やかに彩ります。",
+          "洗練された和の空間で味わう、石垣牛とアグー豚。名物の海ぶどう巻きまで、島のごちそうを一度に楽しむ時間が、旅の最後の夜を鮮やかに彩ります。",
         quote: "「旅の余韻まで、美味しい夜に。」",
         imageAlt: "しゃぶしゃぶセット",
         subImageAlt: "体験写真",
@@ -54,14 +54,14 @@ const languages = {
             "石垣島の温暖な気候と豊かな緑が育んだブランド牛。きめ細かなサシ、上品な甘み、とろける口どけをしゃぶしゃぶでご堪能ください。",
         },
         agu: {
-          name: "純血アグー豚",
+          name: "アグー豚",
           description:
             "沖縄在来の血統を受け継ぐ希少な純血種。濃い旨みと、口の中ですっとほどける脂の甘みが、石垣島の夜を贅沢に締めくくります。",
         },
         seaGrapes: {
           name: "名物・海ぶどう巻き",
           description:
-            "さっと出汁にくぐらせた純血アグー豚を、海ぶどうで巻く三田丁ならではの一品。弾ける食感と塩味が、肉の甘みを引き立てます。",
+            "さっと出汁にくぐらせたアグー豚を、海ぶどうで巻く三田丁ならではの一品。弾ける食感と塩味が、肉の甘みを引き立てます。",
         },
         finale: {
           imageAlt: "〆の雑炊",
@@ -71,31 +71,27 @@ const languages = {
         },
       },
       reviews: {
-        eyebrow: "Google Reviews",
-        title: "Google口コミで多く寄せられた声",
+        eyebrow: "Guest Experiences",
+        title: "お客様の声から見える、三田丁の魅力",
         lead:
-          "ご来店いただいた方の感想に多いポイントを、4つのテーマにまとめました。",
-        note: "※口コミ原文ではなく、寄せられた内容の傾向を要約しています。",
+          "お客様から寄せられた声には、料理の美味しさだけではない、三田丁ならではの時間が表れています。",
+        note:
+          "Google口コミに寄せられた内容の傾向を、テーマごとに要約しています。",
         cards: {
-          cuisine: {
-            title: "料理",
+          discovery: {
+            title: "味わいの発見",
             description:
-              "石垣牛と純血アグー豚の美味しさはもちろん、肉を海ぶどうで巻く新しい食べ方が印象に残ったという声。",
+              "アグー豚の甘みと、肉を海ぶどうで巻く驚き。石垣島らしい食材と食べ方が、記憶に残るひと口をつくる。",
           },
-          experience: {
-            title: "体験",
+          hospitality: {
+            title: "心を添えるおもてなし",
             description:
-              "石垣島ならではの食材を一度に楽しめ、旅の締めくくりにふさわしい特別な思い出になったという声。",
+              "食材や美味しい食べ方を丁寧に案内する接客が、初めての方にも安心して楽しめる時間をつくる。",
           },
-          service: {
-            title: "接客",
+          memory: {
+            title: "旅の記憶になる時間",
             description:
-              "食材や美味しい食べ方をスタッフが丁寧に案内してくれるので、初めてでも安心して楽しめたという声。",
-          },
-          atmosphere: {
-            title: "空間",
-            description:
-              "落ち着いた上質な店内で、カウンターでも個室でもゆっくり食事と会話を楽しめたという声。",
+              "落ち着いた空間で、大切な人とゆっくり食事を楽しむ。その時間全体が、石垣島の旅の思い出になる。",
           },
         },
       },
@@ -123,13 +119,13 @@ const languages = {
       },
       reservation: {
         eyebrow: "Reservation",
-        titleFirst: "石垣島旅行の最後の夜を、",
-        titleSecond: "忘れられない食体験で締めくくる。",
-        lead:
-          "石垣牛、純血アグー豚、名物の海ぶどう巻き。三田丁で、旅の余韻まで美味しい夜を。",
-        note:
-          "席数に限りがございます。ご来店予定がお決まりの際は、事前のご予約をおすすめしております。",
-        online: "最後の夜の席を予約する →",
+        titleFirst: "旅の思い出になる、",
+        titleSecond: "石垣島のディナーを。",
+        leadFirst: "石垣牛、アグー豚、名物の海ぶどう巻き。",
+        leadSecond: "三田丁で、旅の余韻まで美味しい夜を。",
+        noteFirst: "席数に限りがございます。ご来店予定がお決まりの際は、",
+        noteSecond: "事前のご予約をおすすめしております。",
+        online: "空席を確認・予約する →",
         phone: "電話で相談する",
       },
       footer: {
@@ -161,11 +157,11 @@ const languages = {
         reservation: "Book a Table",
       },
       hero: {
-        titleFirst: "Your final night in Ishigaki.",
-        titleSecond: "Make it a feast to remember.",
+        titleFirst: "An Ishigaki dining experience",
+        titleSecond: "to remember.",
         description:
-          "Ishigaki beef, purebred Okinawan Agu pork, and our signature sea grape rolls. End your island journey with a shabu-shabu experience filled with the flavors—and memories—of Ishigaki.",
-        reservation: "Book Your Final Night",
+          "Savor Ishigaki beef, Okinawan Agu pork, and our signature sea grape roll, served with thoughtful hospitality in a calm, refined setting.",
+        reservation: "Book a Table",
         ingredients: "Explore the Island Feast",
         imageAlt: "Ishigaki beef shabu-shabu",
       },
@@ -175,7 +171,7 @@ const languages = {
         first:
           "The nature of Ishigaki Island nurtures flavors that are both bold and refined. At Mitatei, our purpose is to offer more than a meal—we create an experience to remember.",
         second:
-          "Savor Ishigaki beef and rare purebred Okinawan Agu pork in a refined Japanese setting, then discover our signature sea grape rolls. It is an island feast designed to make the final night of your trip unforgettable.",
+          "Savor Ishigaki beef and Okinawan Agu pork in a refined Japanese setting, then discover our signature sea grape rolls. It is an island feast designed to make the final night of your trip unforgettable.",
         quote: "“A delicious final chapter to your island journey.”",
         imageAlt: "Mitatei shabu-shabu set",
         subImageAlt: "Dining experience",
@@ -189,14 +185,14 @@ const languages = {
             "Raised in Ishigaki’s warm climate and lush greenery, this celebrated wagyu brings fine marbling, elegant sweetness, and melt-in-the-mouth richness to every dip in the broth.",
         },
         agu: {
-          name: "Purebred Okinawan Agu Pork",
+          name: "Okinawan Agu Pork",
           description:
             "A rare heritage breed carrying Okinawa’s native bloodline, prized for its deep flavor and clean, gently sweet fat that melts delicately on the palate.",
         },
         seaGrapes: {
           name: "Signature Sea Grape Roll",
           description:
-            "Wrap tender purebred Agu pork in fresh sea grapes for Mitatei’s signature bite: a lively pop of ocean brine that lifts the pork’s natural sweetness.",
+            "Wrap tender Okinawan Agu pork in fresh sea grapes for Mitatei’s signature bite: a lively pop of ocean brine that lifts the pork’s natural sweetness.",
         },
         finale: {
           imageAlt: "Rice porridge finale",
@@ -206,31 +202,27 @@ const languages = {
         },
       },
       reviews: {
-        eyebrow: "Google Reviews",
-        title: "What Guests Often Share on Google",
+        eyebrow: "Guest Experiences",
+        title: "What Guests Remember About Mitatei",
         lead:
-          "Four themes that appear again and again in feedback from our guests.",
-        note: "These are summaries of common feedback, not direct quotations.",
+          "Guest feedback reveals an experience shaped by more than the food alone.",
+        note:
+          "These themes summarize common feedback shared in Google reviews; they are not direct quotations.",
         cards: {
-          cuisine: {
-            title: "Cuisine",
+          discovery: {
+            title: "A Taste of Discovery",
             description:
-              "Guests remember the quality of the Ishigaki beef and purebred Agu pork—and the delightful surprise of wrapping the meat in sea grapes.",
+              "The gentle sweetness of Okinawan Agu pork meets the surprising pop of sea grapes in a distinctly Ishigaki bite.",
           },
-          experience: {
-            title: "Experience",
+          hospitality: {
+            title: "Thoughtful Hospitality",
             description:
-              "Many describe it as a memorable way to enjoy Ishigaki’s signature flavors together and bring their island journey to a special close.",
+              "Careful guidance on the ingredients and how to enjoy them helps first-time guests feel at ease throughout the meal.",
           },
-          service: {
-            title: "Service",
+          memory: {
+            title: "A Moment to Remember",
             description:
-              "Guests appreciate the thoughtful guidance on the ingredients and how to enjoy each bite, making the experience welcoming even for first-time visitors.",
-          },
-          atmosphere: {
-            title: "Atmosphere",
-            description:
-              "The refined, relaxed setting is often noted as a place where guests can linger over dinner and conversation, whether at the counter or in a private room.",
+              "A calm, refined setting invites guests to slow down, share a meal, and carry the experience with them as part of their Ishigaki journey.",
           },
         },
       },
@@ -259,13 +251,15 @@ const languages = {
       },
       reservation: {
         eyebrow: "Reservation",
-        titleFirst: "End your Ishigaki journey",
-        titleSecond: "with a night to remember.",
-        lead:
-          "Ishigaki beef, purebred Okinawan Agu pork, and our signature sea grape rolls—one last island feast at Mitatei.",
-        note:
-          "Seating is limited. We recommend booking in advance once your plans are confirmed.",
-        online: "Book Your Final Night →",
+        titleFirst: "A memorable dinner",
+        titleSecond: "in Ishigaki.",
+        leadFirst:
+          "Ishigaki beef, Okinawan Agu pork, and our signature sea grape rolls—",
+        leadSecond: "an island feast at Mitatei.",
+        noteFirst: "Seating is limited.",
+        noteSecond:
+          "We recommend booking in advance once your plans are confirmed.",
+        online: "Check Availability & Book →",
         phone: "Call Us",
       },
       footer: {
@@ -462,7 +456,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 口コミセクション */}
+      {/* お客様の声セクション */}
       <section className="py-20 md:py-[120px]" id="reviews">
         <div className="max-w-[1200px] mx-auto px-5 md:px-[120px]">
           <div className="text-center mb-16">
@@ -476,7 +470,7 @@ export default function Home() {
               {t.reviews.lead}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {Object.values(t.reviews.cards).map((card) => (
               <div
                 key={card.title}
@@ -576,17 +570,19 @@ export default function Home() {
       {t.reservation.eyebrow}
     </span>
 
-    <h2 className="text-4xl md:text-[64px] font-bold mb-8 leading-tight">
+    <h2 className="text-3xl md:text-[48px] font-bold mb-8 leading-tight">
       {t.reservation.titleFirst}<br className="hidden md:block" />
       {t.reservation.titleSecond}
     </h2>
 
     <p className="text-lg mb-6 max-w-2xl mx-auto opacity-90 leading-relaxed">
-      {t.reservation.lead}
+      <span className="block">{t.reservation.leadFirst}</span>
+      <span className="block">{t.reservation.leadSecond}</span>
     </p>
 
     <p className="text-sm md:text-base mb-12 max-w-2xl mx-auto opacity-80 leading-relaxed">
-      {t.reservation.note}
+      <span className="block">{t.reservation.noteFirst}</span>
+      <span className="block">{t.reservation.noteSecond}</span>
     </p>
 
     <div className="flex flex-col md:flex-row justify-center items-center gap-6">
@@ -629,7 +625,26 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-4">
             <span className="text-xs text-[#B38B4D] tracking-[0.2em] uppercase">{t.footer.socialLabel}</span>
-            <a href="#" className="text-sm text-[#d1c5b4] hover:text-[#e9c176] transition-colors">Instagram</a>
+            <a
+              href="https://www.instagram.com/nikudo_ishigaki_mitatei/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-fit items-center gap-2 text-sm text-[#d1c5b4] hover:text-[#e9c176] transition-colors"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                className="h-4 w-4 shrink-0"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              Instagram
+            </a>
             <div className="mt-8 text-sm text-[#d1c5b4]">{t.footer.copyright}</div>
           </div>
         </div>
