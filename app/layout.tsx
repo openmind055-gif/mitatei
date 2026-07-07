@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const siteUrl = "https://mitatei.apex-plus.co.jp";
+const siteTitle = "石垣島でしゃぶしゃぶなら三田丁｜石垣牛・アグー豚・海ぶどう";
+const siteDescription =
+  "石垣島でしゃぶしゃぶディナーなら三田丁。石垣牛・純血アグー豚・名物海ぶどう巻きを落ち着いた和空間で楽しめます。旅行や記念日、大切な方とのお食事に。TableCheckから24時間予約受付中。";
+const ogImage = "/images/hero.jpg";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,22 +19,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mitatei.apex-plus.co.jp"),
-  title: "石垣島しゃぶしゃぶ｜石垣牛・アグー豚｜三田丁",
-  description:
-    "石垣島で石垣牛と純血アグー豚を味わうしゃぶしゃぶ専門店。海ぶどうを巻く島ならではの食体験、落ち着いた空間、丁寧なおもてなしで旅の一席を彩ります。",
+  metadataBase: new URL(siteUrl),
+  title: siteTitle,
+  description: siteDescription,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "石垣島しゃぶしゃぶ｜石垣牛・アグー豚｜三田丁",
-    description:
-      "石垣牛・アグー豚・海ぶどうを味わう、石垣島ならではのしゃぶしゃぶ体験。",
-    url: "https://mitatei.apex-plus.co.jp",
+    title: siteTitle,
+    description: siteDescription,
+    url: "/",
     siteName: "三田丁",
     images: [
       {
-        url: "/images/ogp.jpg",
+        url: ogImage,
         width: 1200,
         height: 630,
-        alt: "三田丁 石垣島しゃぶしゃぶ",
+        alt: "石垣島のしゃぶしゃぶ 三田丁",
       },
     ],
     locale: "ja_JP",
@@ -36,11 +43,36 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "石垣島しゃぶしゃぶ｜石垣牛・アグー豚｜三田丁",
-    description:
-      "石垣牛・アグー豚・海ぶどうを味わう、石垣島ならではのしゃぶしゃぶ体験。",
-    images: ["/images/ogp.jpg"],
+    title: siteTitle,
+    description: siteDescription,
+    images: [ogImage],
   },
+};
+
+const restaurantJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  name: "三田丁",
+  image: [
+    `${siteUrl}/images/hero.jpg`,
+    `${siteUrl}/images/wagyu.jpg`,
+    `${siteUrl}/images/agu.jpg`,
+    `${siteUrl}/images/umibudo.jpg`,
+  ],
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "石垣270-6",
+    addressLocality: "石垣市",
+    addressRegion: "沖縄県",
+    postalCode: "907-0024",
+    addressCountry: "JP",
+  },
+  telephone: "+81-980-82-6351",
+  servesCuisine: ["しゃぶしゃぶ", "和食", "石垣牛", "アグー豚", "沖縄料理"],
+  priceRange: "¥¥¥",
+  url: siteUrl,
+  openingHours: ["Mo-We 17:00-23:00", "Fr-Su 17:00-23:00"],
+  sameAs: ["https://www.instagram.com/nikudo_ishigaki_mitatei/"],
 };
 
 export default function RootLayout({
@@ -53,7 +85,15 @@ export default function RootLayout({
       lang="ja"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(restaurantJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
